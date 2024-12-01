@@ -1,0 +1,9 @@
+BEGIN_VIOLATION
+RULE_NAME:SFCORW
+FILE_NAME:defines.sv
+LINE_NUMBER:11
+VCS_SEVERITY:Warning
+MESSAGE:  Source file &quot;rvfi_macros.vh&quot; cannot be opened for reading due to &apos;No such VCST_RETfile or directory&apos;.VCST_RETIt will be skipped.VCST_RET&quot;defines.sv&quot;, 11VCST_RETSource info: `include &quot;rvfi_macros.vh&quot;
+END_VIOLATION
+
+

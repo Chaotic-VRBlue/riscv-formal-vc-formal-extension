@@ -1,0 +1,52 @@
+
+
+### action	Num_calls 1	Total_time 0.053296	Total_CpuTime 0	Total malloc-M 2
+1	File:../cover/cover.tcl::17	Time:0.053296	CpuTime:0.00	 Malloc-MB:2
+
+### check_fv	Num_calls 1	Total_time 0.001839	Total_CpuTime 0	Total malloc-M 0
+1	File:../cover/cover.tcl::45	Time:0.001839	CpuTime:0.00	 Malloc-MB:0
+
+### create_clock	Num_calls 1	Total_time 0.023023	Total_CpuTime 0.03	Total malloc-M 0
+1	File:../cover/cover.tcl::37	Time:0.023023	CpuTime:0.03	 Malloc-MB:0
+
+### elaborate	Num_calls 1	Total_time 1.12827	Total_CpuTime 1	Total malloc-M 26
+1	File:../cover/cover.tcl::35	Time:1.12827	CpuTime:1.00	 Malloc-MB:26
+
+### fv_app	Num_calls 1	Total_time 2.4e-05	Total_CpuTime 0	Total malloc-M 0
+
+### fv_update_command_consistency_flow	Num_calls 1	Total_time 0.000615	Total_CpuTime 0	Total malloc-M 0
+
+### fv_var	Num_calls 2	Total_time 5.7e-05	Total_CpuTime 0	Total malloc-M 0
+
+### get_message_db_ptr	Num_calls 1	Total_time 1.4e-05	Total_CpuTime 0	Total malloc-M 0
+
+### get_report_db_ptr	Num_calls 1	Total_time 9e-06	Total_CpuTime 0	Total malloc-M 0
+
+### is_gui_connected	Num_calls 1	Total_time 1.8e-05	Total_CpuTime 0	Total malloc-M 0
+
+### restore_session	Num_calls 1	Total_time 9.1e-05	Total_CpuTime 0	Total malloc-M 0
+
+### sim_force	Num_calls 1	Total_time 0.000399	Total_CpuTime 0	Total malloc-M 0
+
+ ****************************Shell commands Recording************************
+MasterSourceFile ../cover/cover.tcl
+
+
+ ****************************ThreadTask Recording************************
+Thread: CommonMgr Time: 0(s) Mem: 0(KB) MaxSize: 0
+Thread: ReportDb Time: 0.319647(s) Mem: 27288(KB) MaxSize: 50
+
+
+ ****************************ProcessTask Recording************************
+
+ Task : VCS Analyzer Task
+ args: sh,-c,$VCS_HOME/bin/vlogan  -kdb=common_elab /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/analyzeCmd1 -kdb=incopt  -Xufe=parallel:incrdump  -full64  -libfile_opt 
+ file: ../cover/cover.tcl line: 20
+ Start Time: 1.6216, 0.97
+ End Time: 1.82813, 1.15
+
+ Task : VCS Elaborater Task
+ args: sh,-c,$VCS_HOME/bin/vcs -file /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4  -Xvcstatic_extns=0x1000  -Xvcstatic_extns=0x100  +warn=noSM_CCE  -units  -error=IRRIPS  -kdb=common_elab  -Xufe=parallel:incrdump  -kdb=incopt  +warn=noKDB-ELAB-E  -Xverdi_elab_opts=-saveLevel  -verdi_opts "-logdir /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/verdi/elabcomLog " -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64 
+ file: ../cover/cover.tcl line: 35
+ Start Time: 1.88561, 1.2
+ End Time: 2.99538, 2.18

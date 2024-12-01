@@ -1,0 +1,24 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: datapath Parameterized Name: datapath
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: regfile Parameterized Name: regfile
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: imem Parameterized Name: imem
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: aludec Parameterized Name: aludec
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '0' with process id '24299'
+  is done with synthesis of total '4' modules
+  in total cpu time 0.01 s and total run time 0.02 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+

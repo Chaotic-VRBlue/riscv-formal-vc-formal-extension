@@ -1,0 +1,29 @@
+-- default WORK mapping
+WORK > DEFAULT
+TIMEBASE = PS
+
+DISAMBIG_CONCAT=TRUE
+
+OVERWRITE_PREDECLARATION_IN_LIB=TRUE
+
+-- default WORK mapping
+WORK > DEFAULT
+TIMEBASE = PS
+
+DISAMBIG_CONCAT=TRUE
+
+OVERWRITE_PREDECLARATION_IN_LIB=TRUE
+
+DEFAULT : /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/worklib
+
+-- DesignWare map file
+dware: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dware/lib
+gtech: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/gtech/lib
+dw01: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/dw01/lib
+dw02: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/dw02/lib
+dw03: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/dw03/lib
+dw04: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/dw04/lib
+dw05: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/dw05/lib
+dw06: /tools/synopsys/vc_formal/V-2023.12-SP1-1/packages/DW/linux64/packages/dw/dw06/lib
+
+

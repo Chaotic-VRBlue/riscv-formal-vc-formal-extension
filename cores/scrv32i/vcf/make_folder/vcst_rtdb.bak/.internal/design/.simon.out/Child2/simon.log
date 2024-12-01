@@ -1,0 +1,37 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: riscvsingle Parameterized Name: riscvsingle
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_testbench Parameterized Name: rvfi_testbench
+
+
+Warning-[SM_IGN_IAD] Initial Assignment at Declaration
+../../../../checks/rvfi_testbench.sv, 33
+  Initial Assignment at Declaration for "cycle_reg" is ignored by synthesis
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: mux3 Parameterized Name: mux3
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: dmem Parameterized Name: dmem
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: adder Parameterized Name: adder
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: extend Parameterized Name: extend
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '2' with process id '24301'
+  is done with synthesis of total '6' modules
+  in total cpu time 0.01 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+

@@ -1,0 +1,20 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_cover_check_0000 Parameterized Name: rvfi_cover_check_0000
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: flopr Parameterized Name: flopr
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: aludec Parameterized Name: aludec
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '0' with process id '26125'
+  is done with synthesis of total '3' modules
+  in total cpu time 0.01 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:42 2024
+  .
+

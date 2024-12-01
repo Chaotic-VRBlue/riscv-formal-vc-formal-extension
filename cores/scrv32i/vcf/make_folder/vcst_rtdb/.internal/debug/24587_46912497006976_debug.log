@@ -1,0 +1,52 @@
+(2024-12-01 10:59:40),0.011811,0,start,1123.29,390,LicenseMgr Init : 
+(2024-12-01 10:59:40),0.0204365,0,end,1128.62,390,LicenseMgr Init : 
+(2024-12-01 10:59:41),0.0270753,0,start,1317.55,430,Analyze 
+(2024-12-01 10:59:41),0.0302153,0,end,1317.55,431,Analyze 
+(2024-12-01 10:59:41),0.0302165,0,start,1317.55,431,Load VCS Message: 
+(2024-12-01 10:59:41),0.0305226,0,end,1317.55,431,Load VCS Message: 
+(2024-12-01 10:59:41),0.031477,0,start,1317.55,434,Elaborate : 
+(2024-12-01 10:59:42),0.0484879,0,end,1317.55,434,Elaborate : 
+(2024-12-01 10:59:42),0.0484903,0,start,1317.55,434,Load VCS Message: 
+(2024-12-01 10:59:42),0.048593,0,end,1317.55,434,Load VCS Message: 
+(2024-12-01 10:59:42),0.0485945,0,start,1317.55,434,LoadCircuitModel : 
+(2024-12-01 10:59:42),0.0486355,0,start,1317.55,434,VsiLib_Restore : 
+(2024-12-01 10:59:42),0.0486376,0,end,1317.55,434,VsiLib_Restore : 
+(2024-12-01 10:59:42),0.048639,0,end,1317.55,434,LoadCircuitModel : 
+(2024-12-01 10:59:42),0.0486407,0,start,1317.55,434,BuildNetlist : 
+(2024-12-01 10:59:42),0.0486427,0,start,1317.55,434,NLDM Build : 
+(2024-12-01 10:59:42),0.0488008,0,end,1334.45,451,NLDM Build : 
+(2024-12-01 10:59:42),0.0488045,1,start,1334.45,451,Cell properties : 
+(2024-12-01 10:59:42),0.0488069,1,end,1334.45,451,Cell properties : 
+(2024-12-01 10:59:42),0.0488079,0,end,1334.45,451,BuildNetlist : 
+(2024-12-01 10:59:42),0.0498037,0,start,1334.52,451,PropertyLoad: Formal Property : 
+(2024-12-01 10:59:42),0.049805,0,end,1334.52,451,PropertyLoad: Formal Property : 
+(2024-12-01 10:59:42),0.0498064,0,start,1334.52,451,PropertyLoad: Formal Property : 
+(2024-12-01 10:59:42),0.0498073,0,end,1334.52,451,PropertyLoad: Formal Property : 
+(2024-12-01 10:59:42),0.0498084,0,start,1334.52,451,PropertyLoad: Formal Property : 
+(2024-12-01 10:59:42),0.0498092,0,end,1334.52,451,PropertyLoad: Formal Property : 
+(2024-12-01 10:59:42),0.0498119,0,start,1334.52,451,set_abstractions: InvokedInAutoMode : 
+(2024-12-01 10:59:42),0.0498133,0,end,1334.52,451,set_abstractions: InvokedInAutoMode : 
+(2024-12-01 10:59:42),0.0498166,0,start,1334.52,451,StaticCheck: StaticCheckProcess : 
+(2024-12-01 10:59:42),0.0498199,0,start,1334.52,451,StaticCheck: NldfgFlatDesign : 
+(2024-12-01 10:59:42),0.0498212,0,start,1334.52,451,StaticCheck: createFlatDesign : 
+(2024-12-01 10:59:42),0.0498672,0,end,1343.62,460,StaticCheck: createFlatDesign : 
+(2024-12-01 10:59:42),0.0498683,0,start,1343.62,460,StaticCheck: legalize : 
+(2024-12-01 10:59:42),0.0498728,0,end,1343.62,460,StaticCheck: legalize : 
+(2024-12-01 10:59:42),0.0498738,0,start,1343.62,460,StaticCheck: computeNetEquivalences : 
+(2024-12-01 10:59:42),0.0498752,0,end,1343.62,460,StaticCheck: computeNetEquivalences : 
+(2024-12-01 10:59:42),0.0498761,0,start,1343.62,460,StaticCheck: eliminateBidirectionals : 
+(2024-12-01 10:59:42),0.0498771,0,end,1343.62,460,StaticCheck: eliminateBidirectionals : 
+(2024-12-01 10:59:42),0.0498781,0,end,1343.62,460,StaticCheck: NldfgFlatDesign : 
+(2024-12-01 10:59:42),0.0498791,0,start,1343.62,460,StaticCheck: CombLoopCheck  : 
+(2024-12-01 10:59:42),0.0498844,0,end,1343.62,460,StaticCheck: CombLoopCheck  : 
+(2024-12-01 10:59:42),0.0498854,0,start,1343.62,460,StaticCheck: MultiDriverCheck  : 
+(2024-12-01 10:59:42),0.0499062,0,end,1343.62,460,StaticCheck: MultiDriverCheck  : 
+(2024-12-01 10:59:42),0.0499079,0,end,1343.62,451,StaticCheck: StaticCheckProcess : 
+(2024-12-01 10:59:42),0.0499508,0,start,1343.62,451,populate SSF data: 
+(2024-12-01 10:59:42),0.0499518,0,end,1343.62,451,populate SSF data: 
+(2024-12-01 10:59:42),0.0499532,0,start,1343.62,451,DumpGateCountStats : 
+(2024-12-01 10:59:42),0.0499578,0,end,1343.62,451,DumpGateCountStats : 
+(2024-12-01 10:59:42),0.0499682,1,start,1343.62,460,ModuleDesignPropagation : 
+(2024-12-01 10:59:42),0.0499701,1,end,1343.62,460,ModuleDesignPropagation : 
+(2024-12-01 10:59:42),0.0503854,0,start,1343.76,460,Check: check_fv : 
+(2024-12-01 10:59:42),0.0504072,0,end,1343.76,460,Check: check_fv : 

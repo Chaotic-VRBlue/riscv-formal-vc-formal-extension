@@ -1,0 +1,82 @@
+<SVI>
+<SVI_SIMON>
+  <option data="full_hier"/>
+  <option data="vcstaticStabilityMode=1"/>
+  <option data="circWriteFile=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/rvfi_testbench.scm"/>
+  <option data="outputWorkDir=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design"/>
+  <option data="vsiLogDir=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/logs"/>
+  <option data="noRemoveConstants"/>
+  <option data="2valued"/>
+  <option data="preserveSigs"/>
+  <option data="trackLocations"/>
+  <option data="oneDeep"/>
+  <option data="wholeSignalsInSupport"/>
+  <option data="directIfFull"/>
+  <option data="designAttribute"/>
+  <option data="markRawSigs"/>
+  <option data="noRemoveWriteOnlyLocalsInUnnamedBlocks"/>
+  <option data="nxgAutoGlassBox"/>
+  <option data="exitPostAnalysis"/>
+  <option data="preserveStructWriteInsideLoop=1"/>
+  <option data="storeScopeForSvaInGen"/>
+  <option data="useOrigVhdlGenBracket"/>
+  <option data="highLevelForm=0"/>
+  <option data="ndmerge"/>
+  <option data="inferComplexSyncControls"/>
+  <option data="enablePortConnectAttr"/>
+  <option data="noSkipSimMemModels"/>
+  <option data="contFeedBackToLatch"/>
+  <option data="dumpQualifiedName=1"/>
+  <option data="genPrimHierarchy=2"/>
+  <option data="populateDriveStrength"/>
+  <option data="useDot"/>
+  <option data="treatInitialBlockAsNonSynth=0"/>
+  <option data="top=rvfi_testbench"/>
+  <option data="addInputResolution"/>
+  <option data="disableAEPs"/>
+  <option data="dumpVsiLib"/>
+  <option data="generateDontCares"/>
+  <option data="buildTop=1"/>
+  <option data="j=4"/>
+  <option data="alwaysGenLogicForPartialCombCell"/>
+  <option data="inferPrimGateForUDP"/>
+  <option data="memLatchLimit=16"/>
+  <option data="doControlIdentify=1"/>
+  <option data="numWallSeconds=3000"/>
+  <option data="ignoreCoverage"/>
+  <option data="fastScmRead"/>
+  <option data="preserveDBZ"/>
+  <option data="preserveCaseEq=2"/>
+  <option data="loadBasicDbViews"/>
+</SVI_SIMON>
+<SVI_VCS>
+  <option data="hsc=."/>
+  <option data="elab_summary_report_max_inst=5"/>
+  <option data="elab_summary_sam_file=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/reports/elab_summary_sam.rpt"/>
+  <option data="in_design_file=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/inDesign.rpt"/>
+  <option data="top=rvfi_testbench"/>
+  <option data="portCoercionsLog=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/port_coercions.rpt"/>
+</SVI_VCS>
+<SVI_NEW_SVAC>
+  <option data="svacTop=rvfi_testbench"/>
+  <option data="svacStopAtTop=1"/>
+  <option data="vsiFlow=1"/>
+  <option data="svacVacuity=1"/>
+  <option data="svacLatchedVacuity=1"/>
+  <option data="svacOutputXmlIcd=1"/>
+  <option data="removeVcsAutomata=1"/>
+  <option data="svacIcdFileName=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/svac.icd"/>
+  <option data="svacUqsFileName=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/svac.uqs"/>
+  <option data="svacPureLiveness=1"/>
+  <option data="svacImmediateAssert=1"/>
+  <option data="svacWitness=1"/>
+  <option data="svacLatchedWitness=1"/>
+  <option data="svacAllowImmAssertInFuncTask=1"/>
+  <option data="svacUseVhdlGenerateStyle=1"/>
+  <option data="svacEnableDetLiveness=1"/>
+  <option data="svacRewriteAsyncReset=1"/>
+  <option data="svacRepOptCntrThreshold=40"/>
+  <option data="svacUseDfgExpr=1"/>
+  <option data="svacUseLivenessOpt=1"/>
+</SVI_NEW_SVAC>
+</SVI>

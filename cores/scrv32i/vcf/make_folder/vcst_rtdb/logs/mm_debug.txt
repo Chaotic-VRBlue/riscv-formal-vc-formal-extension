@@ -1,0 +1,28 @@
+2024-12-01 10:59:40:1733050780958 | INFO  | Process Limits
+	 Virual Memory -> no limit
+	 Time Limit -> no limit
+	 Stack Size -> no limit
+	 Data Segment -> no limit
+	 File Size -> no limit
+	 Lock Limit -> no limit
+	 CPU Time Limit -> no limit
+	 RSS  -> no limit
+	 Threads  -> 4096 
+Available Cores : 16
+SystemInfo : totalram=31320 freeram=5140.49 sharedram=0 bufferram=0 totalswap=0 freeswap=0 procs= 7133
+
+2024-12-01 10:59:40:1733050780958 | INFO  | Share License key => 6482358865392592575 for master run  Old Key => 6482358865392592575
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: check_cdc cmdPtr: 0x2f58a000
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: check_glitch cmdPtr: 0x2f594000
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: check_rdc cmdPtr: 0x16643980
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: finish_distributed_run cmdPtr: 0x2f417c00
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: sync_active_scenarios cmdPtr: 0x301067f8
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: write_abstract_model cmdPtr: 0x2ff46000
+2024-12-01 10:59:41:1733050781115 | INFO  | registerSyncPoint: write_constr_abstract_model cmdPtr: 0x2f5ba000
+2024-12-01 10:59:41:1733050781423 | INFO  | restoreDesignForChildModes child: 0  designShare: 0 isDesignReadProcess: 0 designExists:0
+2024-12-01 10:59:41:1733050781423 | INFO  | .. don't restore design
+2024-12-01 10:59:42:1733050782551 | INFO  | saveDesignForChildModes: MM not enabled
+2024-12-01 10:59:42:1733050782611 | ERROR | handleTclCmd: check_fv -block
+ status: 1 insidesource: 1 sh_continue_on_error: false isChildMode: 0
+2024-12-01 10:59:42:1733050782612 | ERROR | handleTclCmd: source -echo -verbose ../cover/cover.tcl status: 1 insidesource: 0 sh_continue_on_error: false isChildMode: 0
+2024-12-01 10:59:43:1733050783612 | INFO  | exitChilds

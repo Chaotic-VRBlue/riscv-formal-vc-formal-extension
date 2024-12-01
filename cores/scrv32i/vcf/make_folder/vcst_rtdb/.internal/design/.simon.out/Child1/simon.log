@@ -1,0 +1,28 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: datapath Parameterized Name: datapath
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: mux3 Parameterized Name: mux3
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: dmem Parameterized Name: dmem
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: adder Parameterized Name: adder
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: extend Parameterized Name: extend
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '1' with process id '26126'
+  is done with synthesis of total '5' modules
+  in total cpu time 0.01 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:42 2024
+  .
+

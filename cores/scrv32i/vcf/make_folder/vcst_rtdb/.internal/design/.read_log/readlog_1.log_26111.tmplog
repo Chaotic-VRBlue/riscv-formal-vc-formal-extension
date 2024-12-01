@@ -1,0 +1,12 @@
+BEGIN_VIOLATION
+RULE_NAME:SM_PARALLEL_RUN
+VCS_SEVERITY:Note
+MESSAGE:  Forked &apos;4&apos; child processes with process ids &apos;26125 26126 26127 26128&apos;VCST_RETto perform synthesis of total &apos;18&apos; modules in parallel.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PF
+VCS_SEVERITY:Note
+MESSAGE:  Processing of all modules finished
+END_VIOLATION
+

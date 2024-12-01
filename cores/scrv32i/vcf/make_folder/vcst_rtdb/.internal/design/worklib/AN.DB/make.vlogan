@@ -1,0 +1,32 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -kdb=common_elab -kdb=incopt -sverilog +define+SYNTHESIS -q -timescale=1ns/1ns -full64 -full64
+
+all :		_VCSgd_vGM4b_1.db \
+	_VCSgd_n6i1Ic_1.db \
+	_VCSgd_3KK6ld_1.db \
+	_VCSgd_sv2o0_1.db \
+	_VCSgd_nGFE7b_1.db \
+
+
+
+_VCSgd_vGM4b_1.db :	../../../../checks/rvfi_channel.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../../../checks/rvfi_channel.sv
+
+
+_VCSgd_n6i1Ic_1.db :	../../../../checks/rvfi_testbench.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../../../checks/rvfi_testbench.sv
+
+
+_VCSgd_3KK6ld_1.db :	../../../../checks/rvfi_cover_check.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../../../checks/rvfi_cover_check.sv
+
+
+_VCSgd_sv2o0_1.db :	../../wrapper.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../wrapper.sv
+
+
+_VCSgd_nGFE7b_1.db :	../../scrv32i.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../scrv32i.sv
+
+

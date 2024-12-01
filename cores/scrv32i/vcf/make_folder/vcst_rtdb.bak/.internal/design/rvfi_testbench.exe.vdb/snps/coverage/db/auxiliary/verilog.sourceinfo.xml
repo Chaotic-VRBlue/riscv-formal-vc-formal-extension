@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/trainee1/riscv-formal/cores/scrv32i/vcf/pc_fwd_ch0"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="V-2023.12-SP1-1"  />
+      <fileinfo name=".mhdlinst.dat"  id="0"  />
+      <fileinfo name="../../../../checks/rvfi_testbench.sv"  id="1"  timestamp="1731438034"  />
+      <fileinfo name="../../../../checks/rvfi_pc_fwd_check.sv"  id="2"  timestamp="1731438034"  />
+      <fileinfo name="../../wrapper.sv"  id="3"  timestamp="1732879584"  />
+      <fileinfo name="../../scrv32i.sv"  id="4"  timestamp="1733049206"  />
+    </srcinfo>

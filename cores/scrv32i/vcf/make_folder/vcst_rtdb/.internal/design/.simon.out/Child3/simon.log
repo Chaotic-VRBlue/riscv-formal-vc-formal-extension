@@ -1,0 +1,24 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: top Parameterized Name: top
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_wrapper Parameterized Name: rvfi_wrapper
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: alu Parameterized Name: alu
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: controller Parameterized Name: controller
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '3' with process id '26128'
+  is done with synthesis of total '4' modules
+  in total cpu time 0.01 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:42 2024
+  .
+

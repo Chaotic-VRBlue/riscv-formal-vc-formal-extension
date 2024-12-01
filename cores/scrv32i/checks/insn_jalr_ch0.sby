@@ -1,0 +1,46 @@
+[options]
+mode bmc
+expect pass,fail
+append 0
+depth 21
+skip 20
+
+[engines]
+smtbmc boolector
+
+[script]
+read -sv insn_jalr_ch0.sv /home/trainee1/riscv-formal/cores/scrv32i/../../cores/scrv32i/wrapper.sv /home/trainee1/riscv-formal/cores/scrv32i/../../cores/scrv32i/scrv32i.sv
+prep -flatten -nordff -top rvfi_testbench
+chformal -early
+
+[files]
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_macros.vh
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_channel.sv
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_testbench.sv
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_insn_check.sv
+/home/trainee1/riscv-formal/cores/scrv32i/../../insns/insn_jalr.v
+
+[file defines.sv]
+`define RISCV_FORMAL
+`define RISCV_FORMAL_NRET 1
+`define RISCV_FORMAL_XLEN 32
+`define RISCV_FORMAL_ILEN 32
+`define RISCV_FORMAL_RESET_CYCLES 1
+`define RISCV_FORMAL_CHECK_CYCLE 20
+`define RISCV_FORMAL_CHANNEL_IDX 0
+`define RISCV_FORMAL_CHECKER rvfi_insn_check
+`define RISCV_FORMAL_INSN_MODEL rvfi_insn_jalr
+`define RISCV_FORMAL
+`define RISCV_FORMAL_NRET 1
+`define RISCV_FORMAL_XLEN 32
+`define RISCV_FORMAL_ILEN 32
+`define RISCV_FORMAL_ALIGNED_MEM
+`define RISCV_FORMAL_ALTOPS
+`include "rvfi_macros.vh"
+
+[file insn_jalr_ch0.sv]
+`include "defines.sv"
+`include "rvfi_channel.sv"
+`include "rvfi_testbench.sv"
+`include "rvfi_insn_check.sv"
+`include "insn_jalr.v"

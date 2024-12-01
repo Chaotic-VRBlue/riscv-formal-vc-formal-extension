@@ -1,0 +1,4 @@
+../../../../checks/rvfi_cover_check.sv
+../../../../checks/rvfi_testbench.sv
+../../scrv32i.sv
+../../wrapper.sv

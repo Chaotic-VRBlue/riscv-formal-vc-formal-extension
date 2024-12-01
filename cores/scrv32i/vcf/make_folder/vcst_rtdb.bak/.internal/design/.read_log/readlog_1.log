@@ -1,0 +1,165 @@
+BEGIN_VIOLATION
+RULE_NAME:SM_PARALLEL_RUN
+VCS_SEVERITY:Note
+MESSAGE:  Forked &apos;4&apos; child processes with process ids &apos;24299 24300 24301 24302&apos;VCST_RETto perform synthesis of total &apos;18&apos; modules in parallel.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PF
+VCS_SEVERITY:Note
+MESSAGE:  Processing of all modules finished
+END_VIOLATION
+
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: datapath Parameterized Name: datapath
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: regfile Parameterized Name: regfile
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: imem Parameterized Name: imem
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: aludec Parameterized Name: aludec
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_CHLDRUN_DONE
+VCS_SEVERITY:Note
+MESSAGE:  Child process number &apos;0&apos; with process id &apos;24299&apos;VCST_RETis done with synthesis of total &apos;4&apos; modulesVCST_RETin total cpu time 0.01 s and total run time 0.02 sVCST_RETEnd time: Sun Dec  1 10:59:20 2024VCST_RET.
+END_VIOLATION
+
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: rvfi_pc_fwd_check Parameterized Name: rvfi_pc_fwd_check
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_IGN_IAD
+FILE_NAME:../../../../checks/rvfi_pc_fwd_check.sv
+LINE_NUMBER:21
+VCS_SEVERITY:Warning
+MESSAGE:  Initial Assignment at Declaration for &quot;expect_pc_valid&quot; is ignored by VCST_RETsynthesis
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: mux2 Parameterized Name: mux2
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: controller Parameterized Name: controller
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_CHLDRUN_DONE
+VCS_SEVERITY:Note
+MESSAGE:  Child process number &apos;1&apos; with process id &apos;24300&apos;VCST_RETis done with synthesis of total &apos;3&apos; modulesVCST_RETin total cpu time 0.00 s and total run time 0.01 sVCST_RETEnd time: Sun Dec  1 10:59:20 2024VCST_RET.
+END_VIOLATION
+
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: riscvsingle Parameterized Name: riscvsingle
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: rvfi_testbench Parameterized Name: rvfi_testbench
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_IGN_IAD
+FILE_NAME:../../../../checks/rvfi_testbench.sv
+LINE_NUMBER:33
+VCS_SEVERITY:Warning
+MESSAGE:  Initial Assignment at Declaration for &quot;cycle_reg&quot; is ignored by synthesis
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: mux3 Parameterized Name: mux3
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: dmem Parameterized Name: dmem
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: adder Parameterized Name: adder
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: extend Parameterized Name: extend
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_CHLDRUN_DONE
+VCS_SEVERITY:Note
+MESSAGE:  Child process number &apos;2&apos; with process id &apos;24301&apos;VCST_RETis done with synthesis of total &apos;6&apos; modulesVCST_RETin total cpu time 0.01 s and total run time 0.01 sVCST_RETEnd time: Sun Dec  1 10:59:20 2024VCST_RET.
+END_VIOLATION
+
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: top Parameterized Name: top
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: rvfi_wrapper Parameterized Name: rvfi_wrapper
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: alu Parameterized Name: alu
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: flopr Parameterized Name: flopr
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: maindec Parameterized Name: maindec
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_CHLDRUN_DONE
+VCS_SEVERITY:Note
+MESSAGE:  Child process number &apos;3&apos; with process id &apos;24302&apos;VCST_RETis done with synthesis of total &apos;5&apos; modulesVCST_RETin total cpu time 0.01 s and total run time 0.02 sVCST_RETEnd time: Sun Dec  1 10:59:20 2024VCST_RET.
+END_VIOLATION
+
+

@@ -1,0 +1,26 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_pc_fwd_check Parameterized Name: rvfi_pc_fwd_check
+
+
+Warning-[SM_IGN_IAD] Initial Assignment at Declaration
+../../../../checks/rvfi_pc_fwd_check.sv, 21
+  Initial Assignment at Declaration for "expect_pc_valid" is ignored by 
+  synthesis
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: mux2 Parameterized Name: mux2
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: controller Parameterized Name: controller
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '1' with process id '24300'
+  is done with synthesis of total '3' modules
+  in total cpu time 0.00 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+

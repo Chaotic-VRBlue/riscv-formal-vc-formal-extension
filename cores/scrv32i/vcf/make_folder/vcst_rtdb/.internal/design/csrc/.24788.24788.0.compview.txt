@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1733050781.811897944, "rt":0.61, "ut":0.47, "st":0.29}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1733050781.500794252}
+{"VCS_COMP_START_TIME": 1733050781.500794252}
+{"VCS_COMP_END_TIME": 1733050782.454053598}
+{"VCS_USER_OPTIONS": "-file /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4 -Xvcstatic_extns=0x1000 -Xvcstatic_extns=0x100 +warn=noSM_CCE -units -error=IRRIPS -kdb=common_elab -Xufe=parallel:incrdump -kdb=incopt +warn=noKDB-ELAB-E -Xverdi_elab_opts=-saveLevel -verdi_opts -logdir /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/verdi/elabcomLog  -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64"}

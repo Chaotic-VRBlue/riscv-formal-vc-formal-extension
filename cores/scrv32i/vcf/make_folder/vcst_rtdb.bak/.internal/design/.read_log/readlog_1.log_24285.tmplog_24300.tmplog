@@ -1,0 +1,32 @@
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: rvfi_pc_fwd_check Parameterized Name: rvfi_pc_fwd_check
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_IGN_IAD
+FILE_NAME:../../../../checks/rvfi_pc_fwd_check.sv
+LINE_NUMBER:21
+VCS_SEVERITY:Warning
+MESSAGE:  Initial Assignment at Declaration for &quot;expect_pc_valid&quot; is ignored by VCST_RETsynthesis
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: mux2 Parameterized Name: mux2
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: controller Parameterized Name: controller
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_CHLDRUN_DONE
+VCS_SEVERITY:Note
+MESSAGE:  Child process number &apos;1&apos; with process id &apos;24300&apos;VCST_RETis done with synthesis of total &apos;3&apos; modulesVCST_RETin total cpu time 0.00 s and total run time 0.01 sVCST_RETEnd time: Sun Dec  1 10:59:20 2024VCST_RET.
+END_VIOLATION
+

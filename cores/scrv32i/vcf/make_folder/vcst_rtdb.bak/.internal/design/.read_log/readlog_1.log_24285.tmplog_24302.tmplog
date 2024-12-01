@@ -1,0 +1,36 @@
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: top Parameterized Name: top
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: rvfi_wrapper Parameterized Name: rvfi_wrapper
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: alu Parameterized Name: alu
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: flopr Parameterized Name: flopr
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_PME
+VCS_SEVERITY:Note
+MESSAGE:  Processing: maindec Parameterized Name: maindec
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SM_CHLDRUN_DONE
+VCS_SEVERITY:Note
+MESSAGE:  Child process number &apos;3&apos; with process id &apos;24302&apos;VCST_RETis done with synthesis of total &apos;5&apos; modulesVCST_RETin total cpu time 0.01 s and total run time 0.02 sVCST_RETEnd time: Sun Dec  1 10:59:20 2024VCST_RET.
+END_VIOLATION
+

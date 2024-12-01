@@ -1,0 +1,62 @@
+<ICD>
+  <SystemReset name="" value="" />
+  <Module name="rvfi_pc_fwd_check" DesignLang="Verilog" FileName="../../../../checks/rvfi_pc_fwd_check.sv" LineNo="15">
+    <ModuleVariant name="rvfi_pc_fwd_check"  CheckerModule="">
+      <Property name="unnamed$$_0" type="assume" kind="immediate" InFunction="0" PropLang="SVA" FileName="../../../../checks/rvfi_pc_fwd_check.sv" LineNo="38" MultiAutomata="1">
+        <PropertySource><![CDATA[assume(rvfi_valid[0]);
+]]></PropertySource>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="rvfi_valid" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_ended_reg" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_ended_reg_0" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="unnamed$$_1" type="assume" kind="immediate" InFunction="0" PropLang="SVA" FileName="../../../../checks/rvfi_pc_fwd_check.sv" LineNo="39" MultiAutomata="1">
+        <PropertySource><![CDATA[assume((insn_order == rvfi_order[(64 * 0)+:64]));
+]]></PropertySource>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="insn_order" />
+          <PropertyLeaf signal="rvfi_order" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_ended_reg_2" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_ended_reg_1" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_ended_reg_2" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="unnamed$$_2" type="assert" kind="immediate" InFunction="0" PropLang="SVA" FileName="../../../../checks/rvfi_pc_fwd_check.sv" LineNo="41" MultiAutomata="1">
+        <PropertySource><![CDATA[assert(((1 == 1) && ((!1) || (expect_pc == pc_rdata))));
+]]></PropertySource>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="expect_pc" />
+          <PropertyLeaf signal="pc_rdata" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_ended_reg_4" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_ended_reg_3" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_ended_reg_3" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_ended_reg_4" />
+        </PropertyEncoding>
+      </Property>
+      <VariantInstance name="rvfi_testbench.checker_inst" FileName="../../../../checks/rvfi_testbench.sv" LineNo="40">
+      </VariantInstance>
+    </ModuleVariant>
+  </Module>
+</ICD>

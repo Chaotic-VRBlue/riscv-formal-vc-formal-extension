@@ -1,0 +1,2 @@
+# riscv-formal-vc-formal-extension
+ This repository extends the original riscv-formal framework by enabling compatibility with the Synopsys VC Formal tool. It includes modified configurations, scripts, and documentation to support formal verification of RISC-V processor cores using VC Formal. The project also incorporates additional verification features and optimizations tailored for VC workflows.

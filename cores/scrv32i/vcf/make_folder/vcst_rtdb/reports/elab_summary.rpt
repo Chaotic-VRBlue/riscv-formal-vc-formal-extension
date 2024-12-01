@@ -1,0 +1,142 @@
+###############################################################
+ # This report contains names of design units along with parameter
+ # values and self instances.
+ # Some parameters may have more than one possible values for that
+ # design unit, values will be unique for instances. It is indicated as
+ # "Multiple Values".
+ # In some cases instance count shown may be less than actual instance
+ # count in the design due to optimizations. It is indicated as
+ # "Optimized".
+###############################################################
+
+
+Design Unit Name: 'rvfi_testbench', (../../../../checks/rvfi_testbench.sv:15)
+    Parameters (Total 0)
+    Instances (Total: 0)
+=============================================
+
+
+Design Unit Name: 'rvfi_wrapper', (../../wrapper.sv:26)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper
+=============================================
+
+
+Design Unit Name: 'top', (../../scrv32i.sv:36)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut
+=============================================
+
+
+Design Unit Name: 'riscvsingle', (../../scrv32i.sv:116)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle
+=============================================
+
+
+Design Unit Name: 'controller', (../../scrv32i.sv:402)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.c
+=============================================
+
+
+Design Unit Name: 'maindec', (../../scrv32i.sv:446)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.c.md
+=============================================
+
+
+Design Unit Name: 'aludec', (../../scrv32i.sv:477)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.c.ad
+=============================================
+
+
+Design Unit Name: 'datapath', (../../scrv32i.sv:209)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp
+=============================================
+
+
+Design Unit Name: 'flopr', (../../scrv32i.sv:510)
+    Parameters (Total 1)
+        WIDTH = 32  (default: 8)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.pcreg
+=============================================
+
+
+Design Unit Name: 'adder', (../../scrv32i.sv:527)
+    Parameters (Total 0)
+    Instances (Total 2)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.pcadd4
+        rvfi_testbench.wrapper.uut.rvsingle.dp.pcaddbranch
+=============================================
+
+
+Design Unit Name: 'mux2', (../../scrv32i.sv:539)
+    Parameters (Total 1)
+        WIDTH = 32  (default: 8)
+    Instances (Total 2)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.pcmux
+        rvfi_testbench.wrapper.uut.rvsingle.dp.srcbmux
+=============================================
+
+
+Design Unit Name: 'regfile', (../../scrv32i.sv:554)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.rf
+=============================================
+
+
+Design Unit Name: 'extend', (../../scrv32i.sv:580)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.ext
+=============================================
+
+
+Design Unit Name: 'alu', (../../scrv32i.sv:603)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.alu
+=============================================
+
+
+Design Unit Name: 'mux3', (../../scrv32i.sv:651)
+    Parameters (Total 1)
+        WIDTH = 32  (default: 8)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.rvsingle.dp.resultmux
+=============================================
+
+
+Design Unit Name: 'imem', (../../scrv32i.sv:350)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.imem
+=============================================
+
+
+Design Unit Name: 'dmem', (../../scrv32i.sv:366)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        rvfi_testbench.wrapper.uut.dmem
+=============================================
+
+
+Design Unit Name: 'rvfi_cover_check', (../../../../checks/rvfi_cover_check.sv:15)
+    Parameters (Total 0)
+    Instances (Total 1)
+        rvfi_testbench.checker_inst
+=============================================
+
+

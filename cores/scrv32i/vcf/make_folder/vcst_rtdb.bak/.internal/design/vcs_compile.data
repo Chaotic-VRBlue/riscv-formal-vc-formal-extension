@@ -1,0 +1,5 @@
+WORK:work
+ELAB: -timescale=1ns/1ns
+VLOGAN: +define+SYNTHESIS -timescale=1ns/1ns -error=noMPD
+VHDLAN:
+COMPILE: $VCS_HOME/bin/vlogan  -sverilog -verbose    ../../../../checks/rvfi_macros.vh defines.sv ../../../../checks/rvfi_channel.sv ../../../../checks/rvfi_testbench.sv ../../../../checks/rvfi_pc_fwd_check.sv ../../wrapper.sv ../../scrv32i.sv -work work -full64

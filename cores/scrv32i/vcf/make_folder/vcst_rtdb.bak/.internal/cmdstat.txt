@@ -1,0 +1,65 @@
+
+
+### action	Num_calls 1	Total_time 0.047964	Total_CpuTime 0	Total malloc-M 2
+1	File:../pc_fwd_ch0/pc_fwd_ch0.tcl::17	Time:0.047964	CpuTime:0.00	 Malloc-MB:2
+
+### check_fv	Num_calls 1	Total_time 16.2673	Total_CpuTime 2.29	Total malloc-M 1
+1	File:../pc_fwd_ch0/pc_fwd_ch0.tcl::45	Time:16.2673	CpuTime:2.29	 Malloc-MB:1
+
+### create_clock	Num_calls 1	Total_time 0.014667	Total_CpuTime 0.01	Total malloc-M 0
+1	File:../pc_fwd_ch0/pc_fwd_ch0.tcl::37	Time:0.014667	CpuTime:0.01	 Malloc-MB:0
+
+### elaborate	Num_calls 1	Total_time 1.19465	Total_CpuTime 1.08	Total malloc-M 25
+1	File:../pc_fwd_ch0/pc_fwd_ch0.tcl::35	Time:1.19465	CpuTime:1.08	 Malloc-MB:25
+
+### fv_app	Num_calls 1	Total_time 2.3e-05	Total_CpuTime 0	Total malloc-M 0
+
+### fv_update_command_consistency_flow	Num_calls 1	Total_time 0.000617	Total_CpuTime 0	Total malloc-M 0
+
+### fv_var	Num_calls 2	Total_time 5.3e-05	Total_CpuTime 0	Total malloc-M 0
+
+### get_message_db_ptr	Num_calls 1	Total_time 1.6e-05	Total_CpuTime 0	Total malloc-M 0
+
+### get_report_db_ptr	Num_calls 1	Total_time 1e-05	Total_CpuTime 0	Total malloc-M 0
+
+### is_gui_connected	Num_calls 1	Total_time 2.4e-05	Total_CpuTime 0	Total malloc-M 0
+
+### report_fv	Num_calls 1	Total_time 0.005692	Total_CpuTime 0.01	Total malloc-M 2
+1	File:../pc_fwd_ch0/pc_fwd_ch0.tcl::46	Time:0.005692	CpuTime:0.01	 Malloc-MB:2
+
+### restore_session	Num_calls 1	Total_time 0.000108	Total_CpuTime 0	Total malloc-M 0
+
+### save_session	Num_calls 1	Total_time 0.884269	Total_CpuTime 0.72	Total malloc-M 3
+1	File:../pc_fwd_ch0/pc_fwd_ch0.tcl::47	Time:0.884269	CpuTime:0.72	 Malloc-MB:3
+
+### sim_force	Num_calls 1	Total_time 0.000374	Total_CpuTime 0	Total malloc-M 0
+
+ ****************************Shell commands Recording************************
+MasterSourceFile ../pc_fwd_ch0/pc_fwd_ch0.tcl
+
+
+ ****************************ThreadTask Recording************************
+Thread: CommonMgr Time: 0(s) Mem: 0(KB) MaxSize: 0
+Thread: ReportDb Time: 0.235149(s) Mem: -648(KB) MaxSize: 52
+Thread: watchdog Time: 2.38419e-05(s) Mem: 8(KB) MaxSize: 1
+
+
+ ****************************ProcessTask Recording************************
+
+ Task : VCS Analyzer Task
+ args: sh,-c,$VCS_HOME/bin/vlogan  -kdb=common_elab /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/analyzeCmd1 -kdb=incopt  -Xufe=parallel:incrdump  -full64  -libfile_opt 
+ file: ../pc_fwd_ch0/pc_fwd_ch0.tcl line: 20
+ Start Time: 1.61514, 0.97
+ End Time: 1.82451, 1.14
+
+ Task : VCS Elaborater Task
+ args: sh,-c,$VCS_HOME/bin/vcs -file /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4  -Xvcstatic_extns=0x1000  -Xvcstatic_extns=0x100  +warn=noSM_CCE  -units  -error=IRRIPS  -kdb=common_elab  -Xufe=parallel:incrdump  -kdb=incopt  +warn=noKDB-ELAB-E  -Xverdi_elab_opts=-saveLevel  -verdi_opts "-logdir /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/verdi/elabcomLog " -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64 
+ file: ../pc_fwd_ch0/pc_fwd_ch0.tcl line: 35
+ Start Time: 1.87968, 1.19
+ End Time: 3.05588, 2.26
+
+ Task : TW_0
+ args: tw_master_csc,-log,/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/formal/fpId0/tw/tw.log,-interactive,-workDir,/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/formal/fpId0/tw,-worker,4,-encryptLogs,-time,12
+ file: ../pc_fwd_ch0/pc_fwd_ch0.tcl line: 45
+ Start Time: 3.15078, 2.31
+ End Time: 19.3386, 4.56

@@ -1,0 +1,48 @@
+[options]
+mode cover
+expect pass,fail
+append 0
+depth 16
+skip 15
+
+[engines]
+smtbmc boolector
+
+[script]
+read -sv cover.sv /home/trainee1/riscv-formal/cores/scrv32i/../../cores/scrv32i/wrapper.sv /home/trainee1/riscv-formal/cores/scrv32i/../../cores/scrv32i/scrv32i.sv
+prep -flatten -nordff -top rvfi_testbench
+chformal -early
+
+[files]
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_macros.vh
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_channel.sv
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_testbench.sv
+/home/trainee1/riscv-formal/cores/scrv32i/../../checks/rvfi_cover_check.sv
+
+[file defines.sv]
+`define RISCV_FORMAL
+`define RISCV_FORMAL_NRET 1
+`define RISCV_FORMAL_XLEN 32
+`define RISCV_FORMAL_ILEN 32
+`define RISCV_FORMAL_CHECKER rvfi_cover_check
+`define RISCV_FORMAL_RESET_CYCLES 1
+`define RISCV_FORMAL_CHECK_CYCLE 15
+`define RISCV_FORMAL
+`define RISCV_FORMAL_NRET 1
+`define RISCV_FORMAL_XLEN 32
+`define RISCV_FORMAL_ILEN 32
+`define RISCV_FORMAL_ALIGNED_MEM
+`define RISCV_FORMAL_ALTOPS
+`include "rvfi_macros.vh"
+
+[file cover.sv]
+`include "defines.sv"
+`include "rvfi_channel.sv"
+`include "rvfi_testbench.sv"
+`include "rvfi_cover_check.sv"
+
+[file cover_stmts.vh]
+always @* if (!reset) cover (channel[0].cnt_insns == 2);
+always @* if (!reset) cover (channel[0].rd_addr != 0 && channel[0].rd_wdata != 0);
+always @* if (!reset) cover (channel[0].pc_wdata != channel[0].pc_rdata + 4);
+

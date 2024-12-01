@@ -1,0 +1,30 @@
+
+  Summary Results
+   Property Summary: FPV
+   -----------------
+   > Assertion
+     - # found        : 1
+     - # falsified    : 1
+
+   > Witness
+     - # found        : 3
+     - # covered      : 3
+
+   > Constraint
+     - # found        : 2
+
+
+  List Results
+   Property List:
+   --------------
+   > Assertion
+     # Assertion: 1
+     [  2] falsified   (depth=30)                  -  rvfi_testbench.checker_inst.unnamed$$_2
+
+   > Constraint
+     # Constraint: 2
+     [  0] constrained                             -  rvfi_testbench.checker_inst.unnamed$$_0
+     [  1] constrained                             -  rvfi_testbench.checker_inst.unnamed$$_1
+
+
+

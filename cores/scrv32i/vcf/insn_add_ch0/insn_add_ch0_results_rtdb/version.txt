@@ -1,0 +1,8 @@
+Version      -> V-2023.12-SP1-1 
+Build Date   -> Apr 26, 2024 
+Machine Name -> ip-172-31-10-81.ap-south-1.compute.internal
+Machine OS   -> Linux 3.10.0-1160.118.1.el7.x86_64
+Machine Type -> x86_64
+Cmd Line Arg ->
+VC_STATIC_HOME
+             -> /tools/synopsys/vc_formal/V-2023.12-SP1-1

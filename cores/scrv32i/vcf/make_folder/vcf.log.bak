@@ -1,0 +1,267 @@
+
+                                   VC Static 
+
+              Version V-2023.12-SP1-1 for linux64 - Apr 26, 2024 
+
+                    Copyright (c) 2010 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+restore_session -level default
+MasterSourceFile ../pc_fwd_ch0/pc_fwd_ch0.tcl
+# Simple TCL script for VC Formal
+# Set reset behavior without permanent constraint
+set reset_without_constraint 1
+# Configure VC Formal environment and application variables
+setenv VERDI_COLOR_THEME brightPlus
+set_fml_appmode FPV
+set_app_var apply_bind_in_all_units true
+set_app_var analyze_skip_translate_body false
+set_app_var fml_auto_save default
+set_app_var fml_composite_trace true
+set_fml_var fml_witness_on true
+set_fml_var fml_vacuity_on true
+# Set paths to libraries and design files
+cd [file dirname [info script]]
+# Analyze design files
+analyze -format sverilog -vcs -verbose {
+    ../../../../checks/rvfi_macros.vh
+    defines.sv
+    ../../../../checks/rvfi_channel.sv
+    ../../../../checks/rvfi_testbench.sv
+    ../../../../checks/rvfi_pc_fwd_check.sv
+    ../../wrapper.sv
+    ../../scrv32i.sv
+}
+/tools/synopsys/vc_formal/V-2023.12-SP1-1/vcs-mx/linux64/bin/vcs1fe -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -O -I/tools/synopsys/vc_formal/V-2023.12-SP1-1/vcs-mx/include  -Mldflags= -Wl,-E,-rpath /tools/synopsys/vc_formal/V-2023.12-SP1-1/vcs-mx/linux64/lib  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" " -Msaverestoreobj= -Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=-L/usr/X11R6/lib64 -lX11 -ldl -ldl  -Xvlogan=0x1 -Xvcs_flow=vlogan -kdb=common_elab /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -sverilog -Xmonet -p1800_macro_expansion=xlrm_macro_exp_in_escape -Xspyglass=0x10000 -Xspyglass=0x40000 +define+SYNTHESIS -q -error=noMPD -Xopt_file=/tmp/vcs_20241201105919_22191/_vcs_optFile_tmp_-094202932.f -timescale=1ns/1ns -XVSILangChk=/home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/.read_log/readlog_0.log -kdb=incopt -Xufe=parallel:incrdump -full64 -libfile_opt +mixedhdl2  
+
+Warning-[SFCORW] Source file cannot be opened
+  Source file "rvfi_macros.vh" cannot be opened for reading due to 'No such 
+  file or directory'.
+  It will be skipped.
+  "defines.sv", 11
+  Source info: `include "rvfi_macros.vh"
+
+# Set the correct top module
+set top rvfi_testbench
+# Elaborate the top module
+set elaborateOption -verbose 
+elaborate $top -verbose -sva
+[Warning] COM_OPT009: 'search_path' has not been set.
+[Warning] COM_OPT010: 'link_library' has not been set.
+setenv SYNOPSYS_SIM_SETUP /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/synopsys_sim.setup
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vcs -file /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4  -Xvcstatic_extns=0x1000  -Xvcstatic_extns=0x100  +warn=noSM_CCE  -units  -error=IRRIPS  -kdb=common_elab  -Xufe=parallel:incrdump  -kdb=incopt  +warn=noKDB-ELAB-E  -Xverdi_elab_opts=-saveLevel  -verdi_opts "-logdir /home/trainee1/riscv-formal/cores/scrv32i/vcf/make_folder/vcst_rtdb/verdi/elabcomLog " -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64 '.
+Doing common elaboration 
+                         Chronologic VCS (TM)
+      Version V-2023.12-SP1-1_Full64 -- Sun Dec  1 10:59:20 2024
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Top Level Modules:
+       rvfi_testbench
+TimeScale is 1 ns / 1 ns
+Info: Invoking New SVA Compiler Instrument...
+Info: SVAC-NC Start
+Info: SVAC-NC Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+                                SIMON
+      Version V-2023.12-SP1-1_Full64 -- Sun Dec  1 10:59:20 2024
+               Copyright (c) 1991-2023 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Note-[SM_PARALLEL_RUN] Parallel run
+  Forked '4' child processes with process ids '24299 24300 24301 24302'
+  to perform synthesis of total '18' modules in parallel.
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: datapath Parameterized Name: datapath
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_pc_fwd_check Parameterized Name: rvfi_pc_fwd_check
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: riscvsingle Parameterized Name: riscvsingle
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: top Parameterized Name: top
+
+Warning-[SM_IGN_IAD] Initial Assignment at Declaration
+../../../../checks/rvfi_pc_fwd_check.sv, 21
+  Initial Assignment at Declaration for "expect_pc_valid" is ignored by 
+  synthesis
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_wrapper Parameterized Name: rvfi_wrapper
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: rvfi_testbench Parameterized Name: rvfi_testbench
+
+Warning-[SM_IGN_IAD] Initial Assignment at Declaration
+../../../../checks/rvfi_testbench.sv, 33
+  Initial Assignment at Declaration for "cycle_reg" is ignored by synthesis
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: alu Parameterized Name: alu
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: mux3 Parameterized Name: mux3
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: regfile Parameterized Name: regfile
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: dmem Parameterized Name: dmem
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: mux2 Parameterized Name: mux2
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: adder Parameterized Name: adder
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: flopr Parameterized Name: flopr
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: imem Parameterized Name: imem
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: extend Parameterized Name: extend
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: controller Parameterized Name: controller
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: maindec Parameterized Name: maindec
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: aludec Parameterized Name: aludec
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '1' with process id '24300'
+  is done with synthesis of total '3' modules
+  in total cpu time 0.00 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '2' with process id '24301'
+  is done with synthesis of total '6' modules
+  in total cpu time 0.01 s and total run time 0.01 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '0' with process id '24299'
+  is done with synthesis of total '4' modules
+  in total cpu time 0.01 s and total run time 0.02 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '3' with process id '24302'
+  is done with synthesis of total '5' modules
+  in total cpu time 0.01 s and total run time 0.02 s
+  End time: Sun Dec  1 10:59:20 2024
+  .
+
+Note-[SM_PF] Processing finished
+  Processing of all modules finished
+
+=======================================================
+VCS CPU Time(s)     :0.12
+SIMON CPU Time(s)   :0.12
+SIMON Total Time(s) :0.03
+Peak Memory(MB)     :421
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:rvfi_testbench.
+[Warning] FDC_MDN: Design has 2 multidriven net(s). Use 'report_fv_setup -check multi_driver -list' for further information.
+	Please check the design to confirm if they are real issues.
+# Gate Counts 
+Number of Flat Instances = 5036
+Number of Operator = 5036
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+Number of FlipFlop BitWise 3183
+Number of Latch Bitwise 0
+Number of Nand BitWise 1
+Number of Comb logic = 410
+
+create_clock clock -period 200
+if {$reset_without_constraint} {
+    sim_force reset -apply 1'b1
+} else {
+    create_reset reset -sense high
+}
+# For Batch
+check_fv -block
+[Info] AUTO_SIM_RUN: Running the reset simulation.
+	Either the command 'sim_run' has not been run or the reset simulation needs to be rerun to keep the consistency of the signal reset values.
+[Info] SIM_I_CREATE: Create Simulation Model.
+[Info] AUTO_SIM_SAVE_RESET: Saving the reset states.
+	Either the command 'sim_save_reset' has not been run or the reset states need to be saved again.
+[Info] FORMAL_I_CREATE: Create Formal Model:rvfi_testbench.
+[Warning] POTENTIAL_SETUP_ISSUES: There are potential setup issues. Please run check_fv_setup to confirm.
+	  Reset: 1  Clock: 0  Glitch: 0  Osc_loop: 0  Osc_seq: 0
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv
+	  Id: 0  Goals: 4  Constraints: 2  Block Mode: true
+[Info] LIC_UNUSED_WORKERS: 8 unused worker(s) based 1 licenses needed to support 4 workers requested.
+	Use 'set_grid_usage' to maximize worker usage and improve performance, if there are sufficient compute resources to support more workers.
+	Each runtime license supports 12 workers.
+[Info] LIC_RT_CHECKOUT: VC Formal run time license checkout. Base:1  FPV:1.
+[Warning] LEARNED_DATA_NOT_FOUND: No existing learned data found in 'rvfi_testbench_learn_dir'
+[Info] BITLEVEL_MODEL_STATS: Generated model with 36164 gates, 177 inputs, 3184 registers, 0 initial constraints, 2 constraints.
+[Info] BITLEVEL_MODEL_STATS: Generated model with 33881 gates, 178 inputs, 3182 registers, 0 initial constraints, 2 constraints.
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_0  checking  witness  00:00:01
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_1  checking  witness  00:00:01
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_2  checking    00:00:01
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_2  checking  witness  00:00:01
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_0  covered  witness  00:00:01
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_1  covered  witness  00:00:02
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_2  falsified:30    00:00:08
+[Info] PROP_I_RESULT: rvfi_testbench.checker_inst.unnamed$$_2  covered  witness  00:00:08
+report_fv -list > pc_fwd_ch0_results.txt
+save_session -session pc_fwd_ch0_results
+[Info] SAVED_SESSION: Saved session (vcst_rtdb (as pc_fwd_ch0_results_rtdb)).
+
+=======================================================
+Total Time(S)  :20.25
+CPU Time(S)    :5.29
+Peak Memory(MB):1391
+========================Formal=========================
+Engine Wall Time(S)    :16.13
+Engine Peak Memory(MB) :463
+=======================================================

@@ -1,0 +1,7 @@
+V2KCONFIG:
+LIBLIST:
+_verdiCompileFinished:1
+_comTestOpts._workLib:work
+_comTestOpts._simBinPath:rvfi_testbench.exe
+_originalNovasLibPath:
+_isReElabNeeded:0

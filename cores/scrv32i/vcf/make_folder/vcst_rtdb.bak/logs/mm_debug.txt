@@ -1,0 +1,26 @@
+2024-12-01 10:59:18:1733050758895 | INFO  | Process Limits
+	 Virual Memory -> no limit
+	 Time Limit -> no limit
+	 Stack Size -> no limit
+	 Data Segment -> no limit
+	 File Size -> no limit
+	 Lock Limit -> no limit
+	 CPU Time Limit -> no limit
+	 RSS  -> no limit
+	 Threads  -> 4096 
+Available Cores : 16
+SystemInfo : totalram=31320 freeram=5149 sharedram=0 bufferram=0 totalswap=0 freeswap=0 procs= 7135
+
+2024-12-01 10:59:18:1733050758895 | INFO  | Share License key => 2204667740522343647 for master run  Old Key => 2204667740522343647
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: check_cdc cmdPtr: 0x2f58a000
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: check_glitch cmdPtr: 0x2f594000
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: check_rdc cmdPtr: 0x16643980
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: finish_distributed_run cmdPtr: 0x2f417c00
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: sync_active_scenarios cmdPtr: 0x301067f8
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: write_abstract_model cmdPtr: 0x2ff46000
+2024-12-01 10:59:19:1733050759049 | INFO  | registerSyncPoint: write_constr_abstract_model cmdPtr: 0x2f5ba000
+2024-12-01 10:59:19:1733050759353 | INFO  | restoreDesignForChildModes child: 0  designShare: 0 isDesignReadProcess: 0 designExists:0
+2024-12-01 10:59:19:1733050759353 | INFO  | .. don't restore design
+2024-12-01 10:59:20:1733050760548 | INFO  | saveDesignForChildModes: MM not enabled
+2024-12-01 10:59:37:1733050777738 | INFO  | MultiModeEnabled: 0 dbMerged: 0 Child: 0
+2024-12-01 10:59:37:1733050777738 | INFO  | exitChilds

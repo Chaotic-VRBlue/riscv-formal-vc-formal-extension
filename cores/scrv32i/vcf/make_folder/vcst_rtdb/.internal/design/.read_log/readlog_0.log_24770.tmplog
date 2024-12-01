@@ -1,0 +1,16 @@
+BEGIN_VIOLATION
+RULE_NAME:SFCORW
+FILE_NAME:defines.sv
+LINE_NUMBER:10
+VCS_SEVERITY:Warning
+MESSAGE:  Source file &quot;rvfi_macros.vh&quot; cannot be opened for reading due to &apos;No such VCST_RETfile or directory&apos;.VCST_RETIt will be skipped.VCST_RET&quot;defines.sv&quot;, 10VCST_RETSource info: `include &quot;rvfi_macros.vh&quot;
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:SFCORW
+FILE_NAME:../../../../checks/rvfi_cover_check.sv
+LINE_NUMBER:107
+VCS_SEVERITY:Warning
+MESSAGE:  Source file &quot;cover_stmts.vh&quot; cannot be opened for reading due to &apos;No such VCST_RETfile or directory&apos;.VCST_RETIt will be skipped.VCST_RET&quot;../../../../checks/rvfi_cover_check.sv&quot;, 107VCST_RETSource info: `include &quot;cover_stmts.vh&quot;
+END_VIOLATION
+
