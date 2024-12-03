@@ -6,7 +6,7 @@ This repository is an **extension** of the official [riscv-formal](https://githu
 
 ### 1. FOSS SymbiYosys Formal Verification Flow
 
-This flow demonstrates the formal verification process using the riscv-formal framework with the SymbiYosys tool.
+This flow demonstrates the formal verification process using the riscv-formal framework with the open-source SymbiYosys tool. It consists of components like RVFI, the wrapper, and `checks.cfg`. These components are used to generate `.sby` files, which are then processed by SymbiYosys. The tool runs the verification checks and produces the final results, ensuring that the RISC-V implementation adheres to formal specifications. This flow represents a streamlined, FOSS-based approach to formal verification.
 
 ![FOSS SymbiYosys formal verification flow](flow_diagrams/Sby.png)
 
