@@ -8,7 +8,7 @@ This repository is an **extension** of the official [riscv-formal](https://githu
 
 This flow demonstrates the formal verification process using the riscv-formal framework with the SymbiYosys tool.
 
-![FOSS SymbiYosys formal verification flow](flow_diagrams\Sby.png)
+![FOSS SymbiYosys formal verification flow](flow_diagrams/Sby.png)
 
 ---
 
@@ -16,7 +16,7 @@ This flow demonstrates the formal verification process using the riscv-formal fr
 
 This flow illustrates the modified process, where the riscv-formal framework is used with Synopsys VC Formal tool. The `.sby` files from the riscv-formal framework are first converted to `.tcl` scripts using the custom `sby to tcl` converter before being processed by VC Formal to generate verification results.
 
-![Synopsys VC Formal verification flow](flow_diagrams\VCF.png)
+![Synopsys VC Formal verification flow](flow_diagrams/VCF.png)
 
 ## Features
 
